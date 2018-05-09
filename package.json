@@ -22,13 +22,17 @@
 		"languages": [
 			{
 				"id": "tcl",
-				"aliases": [
-					"Tcl",
-					"tcl"
-				],
-				"extensions": [
-					".tcl"
-				],
+                                "aliases": [
+                                        "Tcl",
+                                        "tcl",
+                                        "Expect",
+                                        "expect"
+                                ],
+                                "firstLine": "^#!/.*\\b((tclsh|wish)(\\d(\\.\\d+)?)?|expect)\\b",
+                                "extensions": [
+                                        ".tcl",
+                                        ".exp"
+                                ],
 				"configuration": "./tcl.configuration.json"
 			}
 		],
